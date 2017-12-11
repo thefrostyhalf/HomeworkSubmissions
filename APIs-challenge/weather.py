@@ -7,6 +7,11 @@
 # This code uses the Open Weather Map API to retrieve a user-defined number of cities and create scatterplots for Temperature, Humidity, Cloudiness and Windiness. 
 # 
 # Note: There is a 1-second wait built-in wile looping between cities to avoid going over the 60-city per minute of the free OMW account API Key. 
+# 
+# ## Observable Trends
+# 1) As expected, the Temperature graph shows that it is currently winter in the Northern Hemisphere, with warmer temperatures in the negative latitude numbers (south of the Equator) and cooler temperatures north of the Equator. 
+# 2) Humidity skews significantly closer to 100% than I would have predicted.
+# 3) Cloudiness appears to be measured in 5% increments, based on grouping of scatter plot.
 
 # In[2]:
 
