@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jackie McGuire - HTML Weather Analysis</title>
+
+<!-- List of BootStrap and CSS Style Sheets -->
+    <!-- Bootsrap using <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+
+
+
+</head>
+<!-- Insert Button Tabs for header -->
+<nav class="navbar navbar-dark bg-dark navbar-expand{-sm|-md|-lg|-xl}">
+    <!-- Navbar content -->
+    <a href="index.html"> <h1 id = "nav-head">Home </h1></a>
+    <div class="btn-group " id = "nav-button">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Plots
+        </button>
+        <a class="btn btn-primary" id = "nav-button" href="compare.html" role="button">Comparison</a>
+        <a class="btn btn-primary" id = "nav-button" href="data.html" role="button">Data</a>
+          <div class="dropdown-menu" id = "nav-button ">
+    
+            <a class="dropdown-item"  href="temp.html">Temperature by Lattitude </a><br>
+            <a class="dropdown-item"  href="humidity.html">Humididty by Lattitude </a><br>     
+            <a class="dropdown-item"  href="clouds.html">Cloudliness by Lattitude</a> <br>
+            <a class="dropdown-item"  href="wind.html">Wind Speed by Lattitude</a>
+                
+            </div>
+            </div>  
+
+  </nav>
+
+
+
+<body style='background-color:lightgray'>
+
+
+        <div class="container">
+            
+            </div>
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="container">
+            <h2>Charts:</h2>
+            <a id="fig2" href="temp.html">
+                <img src="TemperatureByLatitude.png" alt="img" style="width:90px;height:90px;border:0;">
+              </a>
+        
+              <a id="fig3" href="humidity.html" >
+                <img src="HumidityByLatitude.png" alt="img" style="width:90px;height:90px;border:0;">
+              </a>
+        
+        
+              <a id="fig4" href="clouds.html">
+                <img id="chart2" src="CloudinessByLatitude.png" alt="img" style="width:90px;height:90px;border:0;">
+              </a>
+        
+              <a id="fig5" href="wind.html">
+                <img src="WindinessByLatitude.png" alt="img" style="width:90px;height:90px;border:0;">
+              </a>
+        
+            </div> 
+
+        </div>
+
+    <div style="margin-left:300px; margin-top:20px;">
+       
+        <h3>Summary :</h3>
+        <p style="width:800px;height:80px">
+            These charts and data use the OpenWeatherMap API to analyze climate by latitude. 
+    
+            Matplotlib was used to analyze the API response from OpenWeatherMap and create charts that
+            display various climate metrics as they compare to the latitude of the cities they were recorded
+            in.
+            
+        </p>
+    </div>
+
+    
+  
+    
+    
+</div>
+
+
+
+  
+
+    
+  
+        
+   
+
+        
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+
+   
+   
+
+
+           
+     
+          <script> 
+          
+         
+            document.getElementById("fig2").addEventListener("click", function (){
+                image=document.getElementById("fig1");
+                image.src="Images/output_36_1.png"
+            });
+            document.getElementById("fig3").addEventListener("click", function (){
+image=document.getElementById("fig1");
+image.src="Images/output_35_1.png"
+});
+document.getElementById("fig4").addEventListener("click", function (){
+image=document.getElementById("fig1");
+image.src="Images/output_37_1.png"
+});
+document.getElementById("fig5").addEventListener("click", function (){
+image=document.getElementById("fig1");
+image.src="Images/output_38_1.png"
+});
+          </script>
+    </body>
+</html>
