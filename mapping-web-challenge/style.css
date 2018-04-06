@@ -1,0 +1,33 @@
+#map,
+body,
+html {
+  height: 101%;
+}
+
+.legend {
+  padding: 0px 10px;
+  background: #fff;
+  font: 10px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+ .legend ul {
+  padding: 0;
+  margin: 1px;
+  clear: both;
+  list-style-type: none;
+}
+
+.legend li {
+  display: inline-block;
+  width: .25px;
+  height: 20px;
+}
+
+.legend .max {
+  float: right;
+}
+
+h1 {
+  text-align: center;
+}
